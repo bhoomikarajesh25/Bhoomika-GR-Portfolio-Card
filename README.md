@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Opensoruce Portfolio Customizable to any Profile ~ Bento Style
 
 ## Have a min to have a portfolio?! Here is your chance to make one
@@ -69,3 +70,7 @@ Thanks for stopping by, and happy coding!
 ## License
 
 This project is licensed under the [MIT License](LICENSE.txt)
+=======
+# Bhoomika-GR-Portfolio-Card
+My description
+>>>>>>> 183ad5a13fe0f58707e4e497be541d0b7739ff1d
