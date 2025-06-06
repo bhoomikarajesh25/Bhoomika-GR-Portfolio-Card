@@ -3,22 +3,22 @@ import React from "react";
 const Education = ({ isDarkMode }) => {
   const educationDetails = [
     {
-      institution: "Vellore Institute of Technology, Andhra Pradesh",
+      institution: "ChriSt (Deemed to be University), Bangalore",
       duration: "2022-2026",
-      degree: "Bachelor of Technology - Computer Engineering",
-      cgpa: "CGPA: 7.56",
+      degree: "Bachelor of Technology - Computer Science and Engineering",
+      cgpa: "CGPA: 8.3",
     },
     {
-      institution: "Sri Chaitanya Techno School, Chennai",
+      institution: "Mount Carmel College, Bangalore",
       duration: "2021-2022",
-      degree: "CBSE Class XII Aggregate",
-      score: "82.2%",
+      degree: "Pre-University Aggregate",
+      score: "80.2%",
     },
     {
-      institution: "Lalaji Memorial Omega International School, Chennai",
+      institution: "Achala Vidya Mandir, Bangalore",
       duration: "2019-2020",
-      degree: "CBSE Class X Aggregate",
-      score: "82.5%",
+      degree: "SSLC X Aggregate",
+      score: "93.12%",
     },
   ];
 

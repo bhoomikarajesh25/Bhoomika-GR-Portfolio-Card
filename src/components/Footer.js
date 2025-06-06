@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="w-full py-4 text-center">
       <p className="text-sm sm:text-base lg:text-lg ">
-        &copy; {getCurrentYear} kingsmen734
+        &copy; {getCurrentYear} Bhoomika Rajesh
       </p>
     </footer>
   );

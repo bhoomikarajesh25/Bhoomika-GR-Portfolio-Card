@@ -7,9 +7,8 @@ import mailLogo from "../assets/mail.png";
 import resumeImage from "../assets/resume.svg";
 import backgroundImage from "../assets/profile.png";
 import setupImage from "../assets/setup.jpg";
-import fresherLogo from "../assets/experience/Fresher.svg";
-import contactme from '../assets/contact.jpg'
-import { email, github, linkedin, twitter, resume } from "../profileconfig";
+import cameraLogo from "../assets/camera.svg";
+import { email, github, linkedin, twitter, resume,Photography} from "../profileconfig";
 import ProjectModal from "./modals/ProjectModal";
 import ContactModal from "./modals/ContactModal";
 // import rookieLogo from '../assets/experience/Rookie.svg';
@@ -95,16 +94,22 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
 
       <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Profile Image */}
-        <div
-          className="col-span-1 sm:col-span-2 lg:col-span-2 aspect-square sm:aspect-[2/1] rounded-xl border-transparent p-4 shadow-md flex justify-center items-center"
-          style={{
-            backgroundImage: `url(${backgroundImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <span className="text-xl lg:text-4xl text-black dark:text-white font-bold">Who Am I?</span>
-        </div>
+       <div 
+  className="col-span-1 sm:col-span-2 lg:col-span-2 aspect-square sm:aspect-[2/1] rounded-xl border-transparent shadow-md relative overflow-hidden"
+  style={{
+    backgroundImage: `url(${backgroundImage})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center"
+  }}
+>
+  {/* Gradient overlay at bottom */}
+  <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent"></div>
+  
+  {/* Text positioned absolutely at bottom */}
+  <span className="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-xl lg:text-4xl text-white font-bold w-full text-center">
+    Who Am I?
+  </span>
+</div>
 
         {/* Resume */}
         <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
@@ -116,15 +121,17 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
             />
           </a>
         </div>
+{/*   Photography */}
+<div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
+  <a href={Photography} target="_blank" rel="noopener noreferrer">
+    <img
+      src={cameraLogo}
+      alt="Photography"
+      className="w-full h-full object-cover"
+    />
+  </a>
+</div>
 
-        {/* Experience */}
-        <div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-          <img
-            src={fresherLogo}
-            alt="Experience"
-            className="w-full h-full object-cover"
-          />
-        </div>
 
         {/* My Setup */}
         <div className="col-span-1 sm:col-span-2 lg:col-span-4 aspect-square sm:aspect-[4/1] rounded-xl border-transparent shadow-md overflow-hidden">
@@ -178,10 +185,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
           </a>
         </div>
 
-        {/* Contact me */}
-        <div className="col-span-1 sm:col-span-2 lg:col-span-4 rounded-xl border-transparent shadow-md overflow-hidden cursor-pointer" onClick={() => setContactOpen(true)}>
-          <img src={contactme} />
-        </div>
+       
       </div>
 
       {/* Project Modal */}
