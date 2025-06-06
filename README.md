@@ -1,7 +1,6 @@
 
 # Opensoruce Portfolio Customizable to any Profile ~ Bento Style
-# Bhoomika-GR-Portfolio-Card
-My description
+
 
 ## Have a min to have a portfolio?! Here is your chance to make one
 
